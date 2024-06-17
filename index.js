@@ -54,12 +54,12 @@ app.post('/send', async (req, res) => {
   const htmlBody = `
     <html>
       <body style="font-family: Arial, sans-serif; line-height: 1.6;">
-        <h2 style="color: #d9534f;">Alert: High Negativity Score Detected</h2>
-        <p>The following message has been flagged with a negativity score of <strong>0.94</strong>:</p>
+        <h2 style="color: #d9534f;">Alert: Your Ward has sent a negative comment on Instagram</h2>
+        <p>The following message has been flagged with a negative sentiment by the ML Model</p>
         <blockquote style="border-left: 4px solid #d9534f; padding-left: 10px; color: #333;">
           
         </blockquote>
-        <p>Prompt: ${prompt}</p>
+        <p>COMMENT SENT: ${prompt}</p>
         <p>Please review the content and take the necessary actions.</p>
       </body>
     </html>
